@@ -29,8 +29,8 @@ organs <- c('Aorta',
             'Thymus',
             'Tongue',
             'Trachea')
-#length(organs)
-for(i in 1:1){
+
+for(i in 1:length(organs)){
   organ_of_interest = organs[i]
   # Load the per-plate metadata
   plate_metadata_filename = here('00_facs_raw_data', 'metadata_FACS.csv')
